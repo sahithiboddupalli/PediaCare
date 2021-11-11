@@ -48,10 +48,11 @@ public class LoginController {
 
 
         Iterator iterator=sheet.iterator();
-        User user = new User();
         ArrayList<User> users = new ArrayList<>();
         while(iterator.hasNext())
         {
+            User user = new User();
+
             XSSFRow row=(XSSFRow) iterator.next();
 
             Iterator cellIterator=row.cellIterator();
