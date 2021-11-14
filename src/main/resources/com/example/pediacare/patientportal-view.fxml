@@ -37,18 +37,18 @@
             <Font name="Arial Black" size="19.0" />
          </font>
       </Label>
-      <TextField layoutX="285.0" layoutY="218.0" text="first name" />
-      <TextField layoutX="286.0" layoutY="256.0" text="Parent first name" />
-      <TextField layoutX="460.0" layoutY="218.0" text="middle name" />
-      <TextField layoutX="641.0" layoutY="218.0" text="last name" />
-      <TextField layoutX="286.0" layoutY="294.0" text="email" />
-      <TextField layoutX="461.0" layoutY="256.0" text="Parent middle name" />
-      <TextField layoutX="641.0" layoutY="256.0" text="Parent last name" />
-      <TextField layoutX="286.0" layoutY="332.0" text="phone" />
-      <TextField layoutX="287.0" layoutY="370.0" text="mail" />
-      <TextField layoutX="288.0" layoutY="406.0" text="age" />
+      <TextField fx:id="firstName" layoutX="285.0" layoutY="218.0" text="first name" />
+      <TextField fx:id="parentFirstName" layoutX="286.0" layoutY="256.0" text="Parent first name" />
+      <TextField fx:id="middleName" layoutX="460.0" layoutY="218.0" text="middle name" />
+      <TextField fx:id="lastName" layoutX="641.0" layoutY="218.0" text="last name" />
+      <TextField fx:id="email" layoutX="286.0" layoutY="294.0" text="email" />
+      <TextField fx:id="parentMiddleName" layoutX="461.0" layoutY="256.0" text="Parent middle name" />
+      <TextField fx:id="parentLastName" layoutX="641.0" layoutY="256.0" text="Parent last name" />
+      <TextField fx:id="phone" layoutX="286.0" layoutY="332.0" text="phone" />
+      <TextField fx:id="mail" layoutX="287.0" layoutY="370.0" text="mail" />
+      <TextField fx:id="age" layoutX="288.0" layoutY="406.0" text="age" />
       <Button layoutX="669.0" layoutY="481.0" mnemonicParsing="false" onAction="#onSaveClick" text="Save" />
       <Button layoutX="737.0" layoutY="481.0" mnemonicParsing="false" onAction="#onCancelClick" text="Cancel" />
-      <TextField layoutX="461.0" layoutY="406.0" text="gender" />
+      <TextField fx:id="gender" layoutX="461.0" layoutY="406.0" text="gender" />
    </children>
 </AnchorPane>

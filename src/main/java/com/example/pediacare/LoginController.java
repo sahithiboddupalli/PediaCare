@@ -62,9 +62,11 @@ public class LoginController {
             user.setPassword(cell.getStringCellValue());
           users.add(user);
         }
+        inputstream.close();
         boolean status = false;
-        for(User user1 : users){
-            if(user1.getUsername().equals(username) && user1.getPassword().equals(password)){
+
+        for(User user : users){
+            if(user.getUsername().equals(username) && user.getPassword().equals(password)){
                 stage.show();
                 status = true;
             }
