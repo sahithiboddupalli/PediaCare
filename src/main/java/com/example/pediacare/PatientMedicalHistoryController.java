@@ -4,32 +4,12 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.xssf.usermodel.XSSFCell;
-import org.apache.poi.xssf.usermodel.XSSFRow;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Iterator;
-
-public class PatientPortalController {
-    @FXML
-    public Label welcomeText;
+public class PatientMedicalHistoryController {
 
     @FXML
-    public Label dashboardText;
-
-
-
-
+    private Label welcomeText;
 
     @FXML
     public void onHomeClick() throws Exception {
@@ -112,7 +92,4 @@ public class PatientPortalController {
         stage.setScene(scene);
         stage.show();
     }
-
-
-
 }

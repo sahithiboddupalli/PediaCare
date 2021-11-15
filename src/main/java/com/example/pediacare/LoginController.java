@@ -28,7 +28,7 @@ public class LoginController {
     public void onLoginClick(ActionEvent event) throws Exception{
         Stage stage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(PatientPortal.class.getResource("patientportal-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        Scene scene = new Scene(fxmlLoader.load(), 750, 500);
         stage.setTitle("Hello!");
         stage.setScene(scene);
 
