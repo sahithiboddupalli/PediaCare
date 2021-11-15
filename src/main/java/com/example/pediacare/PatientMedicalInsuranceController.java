@@ -4,31 +4,17 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.xssf.usermodel.XSSFCell;
-import org.apache.poi.xssf.usermodel.XSSFRow;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Iterator;
-
-public class PatientPortalController {
+public class PatientMedicalInsuranceController {
     @FXML
-    public Label welcomeText;
-
+    private Label welcomeText;
     @FXML
-    public Label dashboardText;
-
-
-
+    private Label healthInsuranceNumber;
+    @FXML
+    private Label healthInsuranceAgent;
+    @FXML
+    private Label medicalSupport;
 
 
     @FXML
@@ -113,6 +99,18 @@ public class PatientPortalController {
         stage.show();
     }
 
+    @FXML
+    public void onSaveClick() throws Exception{
+        Stage stage = new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(MessageDoctorApplication.class.getResource("messagedoctor-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 750, 500);
+        stage.setTitle("PediaCare");
+        stage.setScene(scene);
+        stage.show();
+    }
 
+    @FXML
+    public void onSavingClick() throws Exception{
 
+    }
 }

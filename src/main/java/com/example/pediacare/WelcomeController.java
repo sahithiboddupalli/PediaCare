@@ -30,7 +30,7 @@ public class WelcomeController {
     public void onLoginClick(ActionEvent event) throws Exception{
         Stage stage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(LoginApplication.class.getResource("login-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Scene scene = new Scene(fxmlLoader.load(), 750, 500);
         stage.setTitle("Login");
         stage.setScene(scene);
         stage.show();

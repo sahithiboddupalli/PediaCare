@@ -7,14 +7,15 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class PatientPortal extends Application {
+public class PatientMedicalInsuranceApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(PatientPortal.class.getResource("patientportal-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(PatientMedicalInsuranceApplication.class.getResource("patientmedicalinsurance-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 750, 500);
-        stage.setTitle("Hello!");
+        stage.setTitle("Patient Medical Insurance");
         stage.setScene(scene);
         stage.show();
+
     }
 
     public static void main(String[] args) {
