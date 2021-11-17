@@ -23,7 +23,6 @@
       <Button layoutX="53.0" layoutY="195.0" mnemonicParsing="false" onAction="#onPersonalDetailsClick" prefHeight="10.0" prefWidth="125.0" text="Personal Details" />
       <Button layoutX="53.0" layoutY="230.0" mnemonicParsing="false" onAction="#onMedicalHistoryClick" prefWidth="125.0" text="Medical History" />
       <Button layoutX="53.0" layoutY="267.0" mnemonicParsing="false" onAction="#onMedicalInsuranceClick" prefWidth="125.0" text="Medical Insurance" />
-      <Button layoutX="53.0" layoutY="306.0" mnemonicParsing="false" onAction="#onPreferredPharmacyClick" prefWidth="125.0" text="Preferred Pharmacy" />
       <Button layoutX="53.0" layoutY="344.0" mnemonicParsing="false" onAction="#onBookAppointmentClick" prefWidth="125.0" text="Book Appointment" />
       <Button layoutX="53.0" layoutY="380.0" mnemonicParsing="false" onAction="#onMessageDoctorClick" prefWidth="125.0" text="Message Doctor" />
       <Label layoutX="53.0" layoutY="151.0" prefHeight="34.0" prefWidth="162.0" text="User Dashboard" textFill="#5250b2">

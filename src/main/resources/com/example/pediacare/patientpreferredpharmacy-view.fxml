@@ -30,15 +30,13 @@
                 <Font name="Arial Black" size="18.0" />
             </font>
         </Label>
-      <Label layoutX="261.0" layoutY="199.0" text="Pharmacy Name" />
-      <Label layoutX="261.0" layoutY="234.0" text="Pharmacy Number" />
-      <Label layoutX="261.0" layoutY="271.0" text="Location/Mail" />
-      <Label layoutX="261.0" layoutY="310.0" text="Phone" />
-      <TextField layoutX="382.0" layoutY="195.0" />
-      <TextField layoutX="383.0" layoutY="230.0" />
-      <TextField layoutX="384.0" layoutY="267.0" />
-      <TextField layoutX="385.0" layoutY="306.0" />
-      <Button layoutX="716.0" layoutY="380.0" mnemonicParsing="false" onAction="#onSave" text="Save" />
+      <Label layoutX="260.0" layoutY="199.0" prefHeight="18.0" prefWidth="131.0" text="Pharmacy Name" />
+      <Label layoutX="260.0" layoutY="234.0" text="Pharmacy Location/ Mail" />
+      <Label layoutX="260.0" layoutY="271.0" prefHeight="18.0" prefWidth="126.0" text="Pharmacy Number" />
+      <TextField layoutX="421.0" layoutY="196.0" />
+      <TextField layoutX="422.0" layoutY="230.0" />
+      <TextField layoutX="423.0" layoutY="268.0" />
+      <Button layoutX="690.0" layoutY="332.0" mnemonicParsing="false" onAction="#onSaving" text="Save" />
 
     </children>
 </AnchorPane>

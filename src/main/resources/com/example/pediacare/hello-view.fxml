@@ -19,8 +19,8 @@
             <Font name="Arial Black" size="15.0" />
          </font>
       </TextArea>
-      <Label fx:id="welcomeText"/>
-      <Button layoutX="498.0" layoutY="98.0" mnemonicParsing="false" onAction="#onBookAppointmentClick" text="Book Appointment" />
+      <Label fx:id="welcomeText" />
+      <Button layoutX="417.0" layoutY="97.0" mnemonicParsing="false" onAction="#onLoginDoctorClick" text="Login as Doctor" />
       <Button layoutX="475.0" layoutY="62.0" mnemonicParsing="false" onAction="#onDoctorClick" text="Doctors" />
       <Button layoutX="621.0" layoutY="62.0" mnemonicParsing="false" onAction="#onLoginClick" text="Login" />
       <Button layoutX="419.0" layoutY="62.0" mnemonicParsing="false" onAction="#onHomeClick" text="Home" />
@@ -28,5 +28,7 @@
       <TextArea layoutX="53.0" layoutY="230.0" prefHeight="91.0" prefWidth="414.0" text="About us:&#10;We boast about our Pediatricians as well qualified, qualified, knowledgable&#10; and amongst the finest available in the country who work dedicatedly&#10;towards enhancing, sustaining and restoring children's health and development&#10;" />
       <TextArea layoutX="481.0" layoutY="230.0" prefHeight="202.0" prefWidth="138.0" text="Locations:&#10;Austin, TX&#10;Boston, MA&#10;Boulder, CO&#10;Charlotte, NC&#10;Chicago, IL&#10;Kansas, KS&#10;Las Vegas, NV&#10;Los Angeles, CA&#10;Tempe, AZ" />
       <TextArea layoutX="55.0" layoutY="334.0" prefHeight="98.0" prefWidth="414.0" text="Services:&#10;At the PediaCare Children's Hospital we treat chronic disorders like Diabeties,&#10;Dermatology, Complimentary alternative medicine, Eating disorders, Asthama,&#10;GERD, Behaviour disorder, Seizures, Obesity, Lead clinic, Hypertension." />
+      <Button layoutX="523.0" layoutY="97.0" mnemonicParsing="false" onAction="#onLoginNurseClick" text="Login as Nurse" />
+      <Button layoutX="625.0" layoutY="97.0" mnemonicParsing="false" onAction="#onRegisterClick" text="Register" />
    </children>
 </AnchorPane>

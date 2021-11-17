@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pediacare.NursePortalController">
+    <children>
+        <Label layoutX="189.0" layoutY="54.0" text="Welcome to Nurse Portal">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <TextField layoutX="160.0" layoutY="208.0" prefHeight="26.0" prefWidth="243.0" promptText="Enter Patient ID" />
+        <Button layoutX="448.0" layoutY="208.0" mnemonicParsing="false" onAction="#onSearchClick" text="Search" />
+        <Button layoutX="152.0" layoutY="115.0" mnemonicParsing="false" onAction="#onDashboardClick" text="Dashboard" />
+        <Button layoutX="244.0" layoutY="115.0" mnemonicParsing="false" onAction="#onEnterVitalsClick" text="Enter Vitals" />
+        <Button layoutX="331.0" layoutY="115.0" mnemonicParsing="false" onAction="#onViewUpcomingAppointmentsClick" text="View Upcoming Appointnments" />
+        <Label layoutX="221.0" layoutY="181.0" prefHeight="18.0" prefWidth="139.0" text="Search for a Patient" />
+    </children>
+</AnchorPane>

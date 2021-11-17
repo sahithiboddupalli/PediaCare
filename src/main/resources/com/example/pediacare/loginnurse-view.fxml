@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pediacare.LoginNurseController">
+   <children>
+      <Label layoutX="230.0" layoutY="84.0" text="Login as a Nurse">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField layoutX="226.0" layoutY="135.0" promptText="username" />
+      <PasswordField layoutX="225.0" layoutY="175.0" promptText="password" />
+      <Button layoutX="277.0" layoutY="220.0" mnemonicParsing="false" onAction="#onLoginNurseButtonClick" text="Login" />
+   </children>
+</AnchorPane>

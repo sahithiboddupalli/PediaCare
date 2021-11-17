@@ -73,7 +73,7 @@ public class PatientPreferredPharmacyController {
     @FXML
     public void onPreferredPharmacyClick() throws Exception {
         Stage stage = new Stage();
-        FXMLLoader fxmlLoader = new FXMLLoader(PatientPreferredPharmacyApplication.class.getResource("patientpreferredpharmacy-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(PatientPreferredPharmacyApplication.class.getResource("preferredpharmacy-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 750, 500);
         stage.setTitle("PediaCare");
         stage.setScene(scene);
@@ -101,7 +101,7 @@ public class PatientPreferredPharmacyController {
     }
 
     @FXML
-    public void onSave() throws Exception{
+    public void onSaving() throws Exception{
 
     }
 }

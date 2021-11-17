@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import org.controlsfx.control.action.Action;
 
 public class WelcomeController {
     @FXML
@@ -38,7 +39,25 @@ public class WelcomeController {
     }
 
     @FXML
-    public void onBookAppointmentClick() {
-        welcomeText.setText("This is book appointment page");
+    public void onLoginDoctorClick(ActionEvent event) throws Exception{
+        Stage stage = new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginDoctorApplication.class.getResource("logindoctor-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 750, 500);
+        stage.setTitle("Login");
+        stage.setScene(scene);
+        stage.show();
     }
+
+    @FXML
+    public void onLoginNurseClick(ActionEvent event) throws Exception{
+        Stage stage = new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginNurseApplication.class.getResource("loginnurse-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 750, 500);
+        stage.setTitle("Login");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    public void onRegisterClick(){ welcomeText.setText("This is Registering a patient");}
 }
