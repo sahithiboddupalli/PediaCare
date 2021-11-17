@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="599.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pediacare.BookAppointmentController">
+<AnchorPane prefHeight="599.0" prefWidth="820.0" style="-fx-background-color: #F5E5E5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pediacare.BookAppointmentController">
     <children>
         <Label layoutX="201.0" layoutY="34.0" prefHeight="18.0" prefWidth="561.0" text="PediCare Children's Hospital" textFill="#bc1111">
             <font>
@@ -23,8 +23,8 @@
         <Button layoutX="53.0" layoutY="195.0" mnemonicParsing="false" onAction="#onPersonalDetailsClick" prefHeight="10.0" prefWidth="125.0" text="Personal Details" />
         <Button layoutX="53.0" layoutY="230.0" mnemonicParsing="false" onAction="#onMedicalHistoryClick" prefWidth="125.0" text="Medical History" />
         <Button layoutX="53.0" layoutY="267.0" mnemonicParsing="false" onAction="#onMedicalInsuranceClick" prefWidth="125.0" text="Medical Insurance" />
-        <Button layoutX="53.0" layoutY="344.0" mnemonicParsing="false" onAction="#onBookAppointmentClick" prefWidth="125.0" text="Book Appointment" />
-        <Button layoutX="53.0" layoutY="380.0" mnemonicParsing="false" onAction="#onMessageDoctorClick" prefWidth="125.0" text="Message Doctor" />
+        <Button layoutX="53.0" layoutY="303.0" mnemonicParsing="false" onAction="#onBookAppointmentClick" prefWidth="125.0" text="Book Appointment" />
+        <Button layoutX="53.0" layoutY="344.0" mnemonicParsing="false" onAction="#onMessageDoctorClick" prefWidth="125.0" text="Message Doctor" />
         <Label layoutX="53.0" layoutY="151.0" prefHeight="34.0" prefWidth="162.0" text="User Dashboard" textFill="#5250b2">
             <font>
                 <Font name="Arial Black" size="18.0" />
@@ -33,7 +33,7 @@
       <Label layoutX="238.0" layoutY="199.0" prefHeight="18.0" prefWidth="86.0" text="Health Issue:" />
       <TextArea fx:id="healthIssue" layoutX="324.0" layoutY="193.0" prefHeight="66.0" prefWidth="422.0" />
       <Label layoutX="250.0" layoutY="298.0" prefHeight="18.0" prefWidth="73.0" text="Date:" />
-      <DatePicker  fx:id="date" layoutX="317.0" layoutY="295.0" onAction="#onSelectDate" />
+      <DatePicker fx:id="date" layoutX="317.0" layoutY="295.0" onAction="#onSelectDate" />
       <Button layoutX="631.0" layoutY="357.0" mnemonicParsing="false" onAction="#onBooking" text="Book Appointment" />
 
     </children>

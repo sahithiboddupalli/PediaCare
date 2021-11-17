@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pediacare.RegisteringController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F5E5E5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pediacare.RegisteringController">
    <children>
       <TextField layoutX="143.0" layoutY="121.0" prefHeight="26.0" prefWidth="90.0" promptText="first name" />
       <Button layoutX="249.0" layoutY="286.0" mnemonicParsing="false" onAction="#onRegiClick" text="Register" />

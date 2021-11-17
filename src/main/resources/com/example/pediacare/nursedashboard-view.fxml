@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pediacare.NurseDashboardController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F5E5E5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pediacare.NurseDashboardController">
     <children>
         <Label layoutX="167.0" layoutY="55.0" text="Welcome to Doctor's Dashboard">
             <font>
@@ -15,9 +14,13 @@
             </font>
         </Label>
         <TextField layoutX="102.0" layoutY="117.0" promptText="First Name" />
-        <TextField layoutX="311.0" layoutY="117.0" promptText="Last Name" />
+        <TextField layoutX="335.0" layoutY="117.0" promptText="Last Name" />
         <TextField layoutX="103.0" layoutY="160.0" promptText="phone no" />
-        <TextField layoutX="312.0" layoutY="160.0" promptText="email" />
-        <Button layoutX="410.0" layoutY="261.0" mnemonicParsing="false" onAction="#onSaveInfoClick" text="Save" />
+        <TextField layoutX="335.0" layoutY="160.0" promptText="email" />
+        <Button layoutX="252.0" layoutY="219.0" mnemonicParsing="false" onAction="#onSaveInfoClick" text="Save" />
+      <Label layoutX="35.0" layoutY="121.0" text="First Name" />
+      <Label layoutX="272.0" layoutY="121.0" text="Last Name" />
+      <Label layoutX="35.0" layoutY="164.0" text="Phone" />
+      <Label layoutX="272.0" layoutY="164.0" text="Email" />
     </children>
 </AnchorPane>

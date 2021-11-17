@@ -10,7 +10,7 @@ import java.io.IOException;
 public class NurseDashboardApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(NurseDashboardApplication.class.getResource("nurseportal-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(NurseDashboardApplication.class.getResource("nursedashboard-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 750, 500);
         stage.setTitle("Hello!");
         stage.setScene(scene);

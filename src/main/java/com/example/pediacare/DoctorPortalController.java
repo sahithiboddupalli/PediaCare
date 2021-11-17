@@ -94,7 +94,14 @@ public class DoctorPortalController {
         e.printStackTrace();}*/
     }
     @FXML
-    public void onDashboardClick(ActionEvent event) throws Exception{}
+    public void onDashboardClick(ActionEvent event) throws Exception{
+        Stage stage = new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(DoctorDashboardApplication.class.getResource("doctordashboard-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 750, 500);
+        stage.setTitle("PediaCare");
+        stage.setScene(scene);
+        stage.show();
+    }
     @FXML
     public void onUploadPrescrptionClick(ActionEvent event) throws Exception{}
     @FXML

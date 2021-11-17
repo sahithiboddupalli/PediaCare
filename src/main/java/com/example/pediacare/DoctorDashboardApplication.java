@@ -10,7 +10,7 @@ import java.io.IOException;
 public class DoctorDashboardApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(DoctorDashboardApplication.class.getResource("doctorportal-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(DoctorDashboardApplication.class.getResource("doctordashboard-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 750, 500);
         stage.setTitle("Hello!");
         stage.setScene(scene);
