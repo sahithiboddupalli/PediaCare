@@ -8,6 +8,8 @@ import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import org.controlsfx.control.action.Action;
 
+import java.io.IOException;
+
 public class WelcomeController {
     @FXML
     public Label welcomeText;
@@ -59,5 +61,13 @@ public class WelcomeController {
     }
 
     @FXML
-    public void onRegisterClick(){ welcomeText.setText("This is Registering a patient");}
+    public void onRegisterClick(ActionEvent event) throws Exception{
+            Stage stage = new Stage();
+            FXMLLoader fxmlLoader = new FXMLLoader(RegisteringApplication.class.getResource("registering-view.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 750, 500);
+            stage.setTitle("Hello!");
+            stage.setScene(scene);
+            stage.show();
+
+    }
 }
