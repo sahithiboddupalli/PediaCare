@@ -68,7 +68,7 @@ public class PatientMedicalInsuranceController {
         stage.setScene(scene);
         stage.show();
     }
-
+/*
     @FXML
     public void onPreferredPharmacyClick() throws Exception {
         Stage stage = new Stage();
@@ -78,6 +78,8 @@ public class PatientMedicalInsuranceController {
         stage.setScene(scene);
         stage.show();
     }
+
+ */
 
     @FXML
     public void onBookAppointmentClick() throws Exception{

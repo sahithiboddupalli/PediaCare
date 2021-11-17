@@ -67,7 +67,7 @@ public class BookAppointmentController {
         stage.setScene(scene);
         stage.show();
     }
-
+/*
     @FXML
     public void onPreferredPharmacyClick() throws Exception {
         Stage stage = new Stage();
@@ -77,6 +77,8 @@ public class BookAppointmentController {
         stage.setScene(scene);
         stage.show();
     }
+    */
+
 
     @FXML
     public void onBookAppointmentClick() throws Exception{
