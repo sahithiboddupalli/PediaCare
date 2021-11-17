@@ -22,6 +22,6 @@
       <TextField layoutX="334.0" layoutY="215.0" promptText="email" />
       <TextField layoutX="143.0" layoutY="259.0" promptText="Age" />
       <TextField layoutX="335.0" layoutY="259.0" promptText="Location" />
-      <Button layoutX="290.0" layoutY="313.0" mnemonicParsing="false" onAction="#onRegisterClick" text="Register" />
+      <Button layoutX="290.0" layoutY="313.0" mnemonicParsing="false" onAction="#onRegisteringClick" text="Register" />
    </children>
 </AnchorPane>

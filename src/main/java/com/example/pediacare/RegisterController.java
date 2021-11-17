@@ -24,7 +24,7 @@ public class RegisterController {
 
 
     @FXML
-    public void onRegisterClick(ActionEvent event) throws Exception{
+    public void onRegisteringClick(ActionEvent event) throws Exception{
 
     }
 }
