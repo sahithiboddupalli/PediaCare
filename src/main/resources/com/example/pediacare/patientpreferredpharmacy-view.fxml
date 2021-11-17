@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="599.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pediacare.PatientPreferredPharmacyController">
+<AnchorPane prefHeight="599.0" prefWidth="820.0" style="-fx-background-color: #F5E5E5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pediacare.PatientPreferredPharmacyController">
     <children>
         <Label layoutX="201.0" layoutY="34.0" prefHeight="18.0" prefWidth="561.0" text="PediCare Children's Hospital" textFill="#bc1111">
             <font>

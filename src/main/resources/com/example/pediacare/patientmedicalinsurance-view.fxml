@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="599.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pediacare.PatientMedicalInsuranceController">
+<AnchorPane prefHeight="599.0" prefWidth="820.0" style="-fx-background-color: #F5E5E5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pediacare.PatientMedicalInsuranceController">
     <children>
         <Label layoutX="201.0" layoutY="34.0" prefHeight="18.0" prefWidth="561.0" text="PediCare Children's Hospital" textFill="#bc1111">
             <font>
@@ -22,8 +22,8 @@
         <Button layoutX="53.0" layoutY="195.0" mnemonicParsing="false" onAction="#onPersonalDetailsClick" prefHeight="10.0" prefWidth="125.0" text="Personal Details" />
         <Button layoutX="53.0" layoutY="230.0" mnemonicParsing="false" onAction="#onMedicalHistoryClick" prefWidth="125.0" text="Medical History" />
         <Button layoutX="53.0" layoutY="267.0" mnemonicParsing="false" onAction="#onMedicalInsuranceClick" prefWidth="125.0" text="Medical Insurance" />
-        <Button layoutX="53.0" layoutY="344.0" mnemonicParsing="false" onAction="#onBookAppointmentClick" prefWidth="125.0" text="Book Appointment" />
-        <Button layoutX="53.0" layoutY="380.0" mnemonicParsing="false" onAction="#onMessageDoctorClick" prefWidth="125.0" text="Message Doctor" />
+        <Button layoutX="53.0" layoutY="300.0" mnemonicParsing="false" onAction="#onBookAppointmentClick" prefWidth="125.0" text="Book Appointment" />
+        <Button layoutX="53.0" layoutY="331.0" mnemonicParsing="false" onAction="#onMessageDoctorClick" prefWidth="125.0" text="Message Doctor" />
         <Label layoutX="53.0" layoutY="151.0" prefHeight="34.0" prefWidth="162.0" text="User Dashboard" textFill="#5250b2">
             <font>
                 <Font name="Arial Black" size="18.0" />
@@ -35,7 +35,11 @@
       <TextField fx:id="healthInsuranceNumber" layoutX="408.0" layoutY="195.0" />
       <TextField fx:id="healthInsuranceAgent" layoutX="408.0" layoutY="230.0" />
       <TextField fx:id="medicalSupport" layoutX="410.0" layoutY="267.0" />
-      <Button layoutX="690.0" layoutY="344.0" mnemonicParsing="false" onAction="#onSavingClick" text="Save" />
+      <Button layoutX="577.0" layoutY="395.0" mnemonicParsing="false" onAction="#onSavingClick" text="Save" />
+      <TextField layoutX="411.0" layoutY="300.0" />
+      <TextField layoutX="412.0" layoutY="331.0" />
+      <Label layoutX="241.0" layoutY="304.0" text="Preferred Pharmacy Name" />
+      <Label layoutX="241.0" layoutY="336.0" text="Preferred Pharmacy Number" />
 
     </children>
 </AnchorPane>

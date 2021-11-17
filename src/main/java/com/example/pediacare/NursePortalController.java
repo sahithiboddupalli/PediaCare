@@ -93,7 +93,14 @@ public class NursePortalController {
             e.printStackTrace();}*/
     }
     @FXML
-    public void onDashboardClick(ActionEvent event) throws Exception{}
+    public void onDashboardClick(ActionEvent event) throws Exception{
+        Stage stage = new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(NurseDashboardApplication.class.getResource("nursedashboard-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 750, 500);
+        stage.setTitle("PediaCare");
+        stage.setScene(scene);
+        stage.show();
+    }
     @FXML
     public void onEnterVitalsClick(ActionEvent event) throws Exception{}
     @FXML

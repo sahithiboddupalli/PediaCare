@@ -396,6 +396,7 @@ public class PatientDashboardController implements Initializable {
                 cell.setCellType(CellType.STRING);
                 System.out.println(cell.getStringCellValue());
                 user.setId(cell.getStringCellValue());
+                System.out.println(user.getFirstName());
 
                 users.add(user);
             }
