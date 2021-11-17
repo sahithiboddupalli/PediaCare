@@ -13,6 +13,7 @@ import org.controlsfx.control.action.Action;
 import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.prefs.Preferences;
 
 public class LoginController {
     @FXML
@@ -28,12 +29,19 @@ public class LoginController {
     public void onLoginClick(ActionEvent event) throws Exception{
         Stage stage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(PatientPortal.class.getResource("patientportal-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 750, 500);
+        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         stage.setTitle("Hello!");
         stage.setScene(scene);
+        Preferences userPreferences = Preferences.userRoot();
+
+        userPreferences.remove("username");
+        userPreferences.remove("password");
 
         String username = loginUsername.getText();
         String password = loginPassword.getText();
+
+
+
 
         String excelFilePath=".\\datafiles\\Book1.xlsx";
         FileInputStream inputstream=new FileInputStream(excelFilePath);
@@ -58,15 +66,18 @@ public class LoginController {
             Iterator cellIterator=row.cellIterator();
             XSSFCell cell=(XSSFCell) cellIterator.next();
             user.setUsername(cell.getStringCellValue());
-             cell=(XSSFCell) cellIterator.next();
+            cell=(XSSFCell) cellIterator.next();
             user.setPassword(cell.getStringCellValue());
-          users.add(user);
+            users.add(user);
         }
         inputstream.close();
         boolean status = false;
 
         for(User user : users){
             if(user.getUsername().equals(username) && user.getPassword().equals(password)){
+                userPreferences.put("username",username);
+                userPreferences.put("password",password);
+                loginText.setText("");
                 stage.show();
                 status = true;
             }

@@ -32,9 +32,9 @@
       <Label layoutX="241.0" layoutY="199.0" text="Health Insurance Number" />
       <Label layoutX="241.0" layoutY="234.0" text="Health Insurance Agent" />
       <Label layoutX="241.0" layoutY="271.0" text="Medical support" />
-      <TextField layoutX="408.0" layoutY="195.0" />
-      <TextField layoutX="408.0" layoutY="230.0" />
-      <TextField layoutX="410.0" layoutY="267.0" />
+      <TextField fx:id="healthInsuranceNumber" layoutX="408.0" layoutY="195.0" />
+      <TextField fx:id="healthInsuranceAgent" layoutX="408.0" layoutY="230.0" />
+      <TextField fx:id="medicalSupport" layoutX="410.0" layoutY="267.0" />
       <Button layoutX="690.0" layoutY="344.0" mnemonicParsing="false" onAction="#onSavingClick" text="Save" />
 
     </children>

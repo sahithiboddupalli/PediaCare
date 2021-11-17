@@ -1,7 +1,9 @@
 package com.example.pediacare;
 
+import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -17,8 +19,11 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.ResourceBundle;
+import java.util.prefs.Preferences;
 
 public class PatientPortalController {
     @FXML
@@ -26,6 +31,38 @@ public class PatientPortalController {
 
     @FXML
     public Label dashboardText;
+    @FXML
+    public Label personalDetailsText;
+
+    @FXML
+    private TextField firstName;
+
+    @FXML
+    private TextField lastName;
+    @FXML
+    private TextField parentFirstName;
+    @FXML
+    private TextField middleName;
+
+    @FXML
+    private TextField email;
+
+    @FXML
+    private TextField parentMiddleName;
+
+    @FXML
+    private TextField parentLastName;
+
+    @FXML
+    private TextField phone;
+
+    @FXML
+    private TextField age;
+    @FXML
+    private TextField mail;
+    @FXML
+    private TextField gender;
+
 
 
 
@@ -60,6 +97,8 @@ public class PatientPortalController {
         Scene scene = new Scene(fxmlLoader.load(), 750, 500);
         stage.setTitle("PediaCare");
         stage.setScene(scene);
+        PatientDashboardController patientDashboardController = fxmlLoader.getController();
+        patientDashboardController.load();
         stage.show();
     }
 
@@ -70,6 +109,8 @@ public class PatientPortalController {
         Scene scene = new Scene(fxmlLoader.load(), 750, 500);
         stage.setTitle("PediaCare");
         stage.setScene(scene);
+        PatientMedicalHistoryController controller =fxmlLoader.getController();
+        controller.load();
         stage.show();
     }
 
@@ -80,20 +121,21 @@ public class PatientPortalController {
         Scene scene = new Scene(fxmlLoader.load(), 750, 500);
         stage.setTitle("PediaCare");
         stage.setScene(scene);
+        PatientMedicalInsuranceController controller = fxmlLoader.getController();
+        controller.load();
         stage.show();
     }
-/*
-   // @FXML
-   // public void onPreferredPharmacyClick() throws Exception {
-    //    Stage stage = new Stage();
-      //  FXMLLoader fxmlLoader = new FXMLLoader(PatientPreferredPharmacyApplication.class.getResource("preferredpharmacy-view.fxml"));
-        //Scene scene = new Scene(fxmlLoader.load(), 750, 500);
-      //  stage.setTitle("PediaCare");
-       // stage.setScene(scene);
-       // stage.show();
-   // }
-   
- */
+
+    @FXML
+    public void onPreferredPharmacyClick() throws Exception {
+        Stage stage = new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(PatientPreferredPharmacyApplication.class.getResource("patientpreferredpharmacy-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 750, 500);
+        stage.setTitle("PediaCare");
+        stage.setScene(scene);
+        stage.show();
+    }
+
 
     @FXML
     public void onBookAppointmentClick() throws Exception{
@@ -105,6 +147,8 @@ public class PatientPortalController {
         stage.show();
     }
 
+
+
     @FXML
     public void onMessageDoctorClick() throws Exception{
         Stage stage = new Stage();
@@ -114,6 +158,7 @@ public class PatientPortalController {
         stage.setScene(scene);
         stage.show();
     }
+
 
 
 

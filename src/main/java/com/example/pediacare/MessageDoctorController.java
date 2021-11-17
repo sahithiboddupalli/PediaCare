@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
 public class MessageDoctorController {
@@ -12,7 +13,7 @@ public class MessageDoctorController {
     @FXML
     private Label doctorEmail;
     @FXML
-    private Label message;
+    private TextArea messageDoc;
 
     @FXML
     public void onHomeClick() throws Exception {
@@ -26,7 +27,6 @@ public class MessageDoctorController {
 
     @FXML
     public void onContactUsClick() {
-        welcomeText.setText("This is Contact Us page!");
     }
 
     @FXML
@@ -100,6 +100,6 @@ public class MessageDoctorController {
 
     @FXML
     public void onSendingClick() throws Exception{
-        welcomeText.setText("This is Contact Us page!");
+        welcomeText.setText("Your issue i.e "+messageDoc.getText()+" will be resolved shortly");
     }
 }

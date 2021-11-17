@@ -10,6 +10,7 @@ module com.example.pediacare {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires org.apache.poi.ooxml;
+    requires java.prefs;
 
     opens com.example.pediacare to javafx.fxml;
     exports com.example.pediacare;

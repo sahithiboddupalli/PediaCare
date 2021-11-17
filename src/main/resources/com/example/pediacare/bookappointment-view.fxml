@@ -31,9 +31,9 @@
             </font>
         </Label>
       <Label layoutX="238.0" layoutY="199.0" prefHeight="18.0" prefWidth="86.0" text="Health Issue:" />
-      <TextArea layoutX="324.0" layoutY="193.0" prefHeight="66.0" prefWidth="422.0" />
+      <TextArea fx:id="healthIssue" layoutX="324.0" layoutY="193.0" prefHeight="66.0" prefWidth="422.0" />
       <Label layoutX="250.0" layoutY="298.0" prefHeight="18.0" prefWidth="73.0" text="Date:" />
-      <DatePicker layoutX="317.0" layoutY="295.0" onAction="#onSelectDate" />
+      <DatePicker  fx:id="date" layoutX="317.0" layoutY="295.0" onAction="#onSelectDate" />
       <Button layoutX="631.0" layoutY="357.0" mnemonicParsing="false" onAction="#onBooking" text="Book Appointment" />
 
     </children>
