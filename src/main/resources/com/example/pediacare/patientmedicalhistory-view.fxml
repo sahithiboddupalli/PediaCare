@@ -32,7 +32,7 @@
       <Label layoutX="234.0" layoutY="401.0" text="Visit Summary" />
       <TextArea id="Visit Summary" fx:id="visitSummary" layoutX="338.0" layoutY="400.0" prefHeight="26.0" prefWidth="478.0" />
       <Label layoutX="237.0" layoutY="251.0" text="Prescribed Medicines" />
-      <TextField id="prescribed MEdicines" fx:id="prescribedMedicines" layoutX="397.0" layoutY="246.0" /><![CDATA[
-
-    ]]></children>
+      <TextField id="prescribed MEdicines" fx:id="prescribedMedicines" layoutX="397.0" layoutY="246.0" />
+      <Button fx:id="save" layoutX="304.0" layoutY="457.0" mnemonicParsing="false" text="Save" />
+    </children>
 </AnchorPane>

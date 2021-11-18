@@ -28,12 +28,12 @@ public class NursePortalController {
     public void onSearchClick(ActionEvent event) throws Exception{
 
         Stage stage = new Stage();
-        FXMLLoader fxmlLoader = new FXMLLoader(PatientDashboardApplication.class.getResource("patientdashboard-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(PatientDashboardApplication.class.getResource("patientmedicalhistory-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 750, 500);
         stage.setTitle("PediaCare");
         stage.setScene(scene);
-        PatientDashboardController patientDashboardController = fxmlLoader.getController();
-        patientDashboardController.nurseload(id.getText());
+        PatientMedicalHistoryController patientMedicalHistoryController = fxmlLoader.getController();
+        patientMedicalHistoryController.nurseload(id.getText());
         stage.show();
 
 

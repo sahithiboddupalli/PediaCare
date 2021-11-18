@@ -95,6 +95,7 @@ public class PatientDashboardController implements Initializable {
         Scene scene = new Scene(fxmlLoader.load(), 750, 500);
         stage.setTitle("PediaCare");
         stage.setScene(scene);
+        PatientDashboardController controller =fxmlLoader.getController();
         stage.show();
     }
 
@@ -345,86 +346,4 @@ public class PatientDashboardController implements Initializable {
 
     }
 
-    public void nurseload(String id) {
-        String excelFilePath=".\\datafiles\\Book1.xlsx";
-        try {
-            FileInputStream inputstream = new FileInputStream(excelFilePath);
-
-            XSSFWorkbook workbook = new XSSFWorkbook(inputstream);
-            XSSFSheet sheet = workbook.getSheetAt(1);    //XSSFSheet sheet=workbook.getSheet("Sheet1");
-
-
-            ///////// Iterator ////////////////////////
-
-
-            Iterator iterator = sheet.iterator();
-            ArrayList<User> users = new ArrayList<>();
-            while (iterator.hasNext()) {
-                User user = new User();
-
-                XSSFRow row = (XSSFRow) iterator.next();
-                Iterator cellIterator = row.cellIterator();
-                XSSFCell cell = (XSSFCell) cellIterator.next();
-                user.setFirstName(cell.getStringCellValue());
-                cell = (XSSFCell) cellIterator.next();
-                user.setMiddleName(cell.getStringCellValue());
-                cell = (XSSFCell) cellIterator.next();
-                user.setLastName(cell.getStringCellValue());
-                cell = (XSSFCell) cellIterator.next();
-                user.setParentFirstName(cell.getStringCellValue());
-                cell = (XSSFCell) cellIterator.next();
-                user.setParentMiddleName(cell.getStringCellValue());
-                cell = (XSSFCell) cellIterator.next();
-                user.setParentLastName(cell.getStringCellValue());
-                cell = (XSSFCell) cellIterator.next();
-                user.setEmail(cell.getStringCellValue());
-                cell = (XSSFCell) cellIterator.next();
-                user.setPhone(cell.getStringCellValue());
-                cell = (XSSFCell) cellIterator.next();
-                user.setMail(cell.getStringCellValue());
-                cell = (XSSFCell) cellIterator.next();
-                user.setAge(cell.getStringCellValue());
-                cell = (XSSFCell) cellIterator.next();
-                user.setGender(cell.getStringCellValue());
-                cell = (XSSFCell) cellIterator.next();
-                user.setUsername(cell.getStringCellValue());
-                cell = (XSSFCell) cellIterator.next();
-                user.setPassword(cell.getStringCellValue());
-                cell = (XSSFCell) cellIterator.next();
-                cell.setCellType(CellType.STRING);
-                cell = (XSSFCell) cellIterator.next();
-                cell.setCellType(CellType.STRING);
-                System.out.println(cell.getStringCellValue());
-                user.setId(cell.getStringCellValue());
-                System.out.println(user.getFirstName());
-
-                users.add(user);
-            }
-            inputstream.close();
-
-
-            for (User user : users) {
-                System.out.println(user.getId()+" inside enhanced llop");
-                if (user.getId().equals(id)) {
-                    firstName.setText(user.getFirstName());
-                    lastName.setText(user.getLastName());
-                    middleName.setText(user.getMiddleName());
-                    parentFirstName.setText(user.getParentFirstName());
-                    parentLastName.setText(user.getParentLastName());
-                    parentMiddleName.setText(user.getParentMiddleName());
-                    email.setText(user.getEmail());
-                    phone.setText(user.getPhone());
-                    mail.setText(user.getMail());
-                    age.setText(user.getAge());
-                    gender.setText(user.getGender());
-
-                }
-
-            }
-        }
-        catch(Exception e){
-            e.printStackTrace();
-        }
-
-    }
 }
