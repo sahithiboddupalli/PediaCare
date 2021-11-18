@@ -13,7 +13,7 @@ public class PatientPortalController {
     @FXML
     public Label personalDetailsText;
 
-
+    // Created a portal for patient's login
 
     @FXML
     public void onHomeClick() {
