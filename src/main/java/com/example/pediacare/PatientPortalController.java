@@ -1,6 +1,7 @@
 package com.example.pediacare;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -160,6 +161,14 @@ public class PatientPortalController {
     }
 
 
-
-
+    public void pharmacyOnClick(ActionEvent actionEvent) throws IOException {
+        Stage stage = new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(MessageDoctorApplication.class.getResource("pharmacy-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 750, 500);
+        stage.setTitle("PediaCare");
+        stage.setScene(scene);
+        PharmacyViewController controller =fxmlLoader.getController();
+        controller.load();
+        stage.show();
+    }
 }

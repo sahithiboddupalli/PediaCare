@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="599.0" prefWidth="820.0" style="-fx-background-color: #F5E5E5;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pediacare.PatientPortalController">
+<AnchorPane prefHeight="599.0" prefWidth="820.0" style="-fx-background-color: #F5E5E5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pediacare.PatientPortalController">
    <children>
       <Label layoutX="201.0" layoutY="34.0" prefHeight="18.0" prefWidth="561.0" text="PediCare Children's Hospital" textFill="#bc1111">
          <font>
@@ -32,6 +33,7 @@
             <Font name="Arial Black" size="19.0" />
          </font>
       </Label>
+      <Button onAction="#pharmacyOnClick" layoutX="51.0" layoutY="384.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="131.0" text="Pharmacy Information" />
 
    </children>
 </AnchorPane>

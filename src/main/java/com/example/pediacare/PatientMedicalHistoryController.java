@@ -53,7 +53,6 @@ public class PatientMedicalHistoryController {
 
 
 public void load(){
-    System.out.println("Stage started");
     Preferences userPreferences = Preferences.userRoot();
 
     String username = userPreferences.get("username","root");

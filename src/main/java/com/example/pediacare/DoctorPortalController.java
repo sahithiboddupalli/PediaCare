@@ -94,14 +94,7 @@ public class DoctorPortalController {
         e.printStackTrace();}*/
     }
     @FXML
-    public void onDashboardClick(ActionEvent event) throws Exception{
-        Stage stage = new Stage();
-        FXMLLoader fxmlLoader = new FXMLLoader(DoctorDashboardApplication.class.getResource("doctordashboard-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 750, 500);
-        stage.setTitle("PediaCare");
-        stage.setScene(scene);
-        stage.show();
-    }
+    public void onDashboardClick(ActionEvent event) throws Exception{}
     @FXML
     public void onUploadPrescrptionClick(ActionEvent event) throws Exception{}
     @FXML
@@ -121,13 +114,15 @@ public class DoctorPortalController {
 
 
             Iterator iterator = sheet.iterator();
-            ArrayList<String> users = new ArrayList<>();
+            ArrayList<User> users = new ArrayList<>();
             while (iterator.hasNext()) {
                 User user = new User();
 
                 XSSFRow row = (XSSFRow) iterator.next();
                 Iterator cellIterator = row.cellIterator();
                 XSSFCell cell = (XSSFCell) cellIterator.next();
+                user.setUsername(cell.getStringCellValue());
+
                 cell = (XSSFCell) cellIterator.next();
                 cell = (XSSFCell) cellIterator.next();
                 cell = (XSSFCell) cellIterator.next();
@@ -141,21 +136,31 @@ public class DoctorPortalController {
                 cell = (XSSFCell) cellIterator.next();
                 cell = (XSSFCell) cellIterator.next();
                 user.setPassword(cell.getStringCellValue());
-                cell = (XSSFCell) cellIterator.next();
-                String date =cell.getStringCellValue();
-                users.add(date);
+                if(cellIterator.hasNext()) {
+                    cell = (XSSFCell) cellIterator.next();
+                    user.setDate(cell.getStringCellValue());
+                }
+                users.add(user);
+
             }
             inputstream.close();
             appointments.setText("Upcoming appointments are: ");
-            for (String user : users) {
-                appointments.setText(user);
+            for (User user : users) {
+                appointments.setText(user.getDate()+" Patient name is "+user.getUsername());
+                break;
 
-                }
+            }
 
 
         }
         catch(Exception e){
             e.printStackTrace();
         }
+    }
+
+    public void onsendMessageClick(ActionEvent actionEvent) {
+
+
+
     }
 }

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pediacare.VitalsViewController">
+   <children>
+      <Label layoutX="65.0" layoutY="71.0" text="Weight" />
+      <TextField fx:id="weight" id="weight" layoutX="164.0" layoutY="66.0" />
+      <Label fx:id="text" layoutX="54.0" layoutY="23.0" />
+      <Label layoutX="72.0" layoutY="132.0" text="Height" />
+      <TextField fx:id="height" id="height" layoutX="164.0" layoutY="127.0" />
+      <TextField fx:id="temp" id="temp" layoutX="173.0" layoutY="185.0" />
+      <TextField fx:id="age" id="age" layoutX="173.0" layoutY="240.0" />
+      <Button onAction="#onsave" layoutX="164.0" layoutY="291.0" mnemonicParsing="false" text="Save" />
+      <Label layoutX="72.0" layoutY="190.0" text="Temperature" />
+      <Label layoutX="77.0" layoutY="245.0" text="age" />
+   </children>
+</AnchorPane>

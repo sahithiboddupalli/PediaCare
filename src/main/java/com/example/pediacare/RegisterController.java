@@ -3,24 +3,23 @@ package com.example.pediacare;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 public class RegisterController {
     @FXML
-    public Label firstName;
+    public TextField firstName;
     @FXML
-    public Label LastName;
+    public TextField lastName;
     @FXML
-    public Label parentFirstName;
+    public TextField parentFirstName;
     @FXML
     public Label parentLastName;
     @FXML
     public Label age;
     @FXML
-    public Label phoneNumber;
+    public Label phone;
     @FXML
     public Label email;
-    @FXML
-    public Label location;
 
 
     @FXML

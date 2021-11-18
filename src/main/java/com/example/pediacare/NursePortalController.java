@@ -102,7 +102,14 @@ public class NursePortalController {
         stage.show();
     }
     @FXML
-    public void onEnterVitalsClick(ActionEvent event) throws Exception{}
+    public void onEnterVitalsClick(ActionEvent event) throws Exception{
+        Stage stage = new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(NurseDashboardApplication.class.getResource("vitals-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 750, 500);
+        stage.setTitle("PediaCare");
+        stage.setScene(scene);
+        stage.show();
+    }
     @FXML
     public void onViewUpcomingAppointmentsClick(ActionEvent event) throws Exception{
         String excelFilePath=".\\datafiles\\Book1.xlsx";

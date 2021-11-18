@@ -1,26 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F5E5E5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pediacare.RegisteringController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F5E5E5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pediacare.RegisteringController">
    <children>
-      <TextField layoutX="143.0" layoutY="121.0" prefHeight="26.0" prefWidth="90.0" promptText="first name" />
+      <TextField fx:id="firstName" layoutX="143.0" layoutY="121.0" prefHeight="26.0" prefWidth="90.0" promptText="first name" />
       <Button layoutX="249.0" layoutY="286.0" mnemonicParsing="false" onAction="#onRegiClick" text="Register" />
       <Label layoutX="150.0" layoutY="45.0" prefHeight="31.0" prefWidth="320.0" text="Registering a Patient to the portal">
          <font>
             <Font size="21.0" />
          </font>
       </Label>
-      <TextField layoutX="387.0" layoutY="123.0" prefHeight="26.0" prefWidth="83.0" promptText="last name" />
-      <TextField layoutX="143.0" layoutY="164.0" prefHeight="26.0" prefWidth="90.0" promptText="parent first name" />
-      <TextField layoutX="387.0" layoutY="164.0" prefHeight="26.0" prefWidth="90.0" promptText="parent last name" />
-      <TextField layoutX="143.0" layoutY="210.0" prefHeight="26.0" prefWidth="90.0" promptText="phone" />
-      <TextField layoutX="383.0" layoutY="210.0" prefHeight="26.0" prefWidth="90.0" promptText="email" />
+      <TextField fx:id="lastName" layoutX="387.0" layoutY="123.0" prefHeight="26.0" prefWidth="83.0" promptText="last name" />
+      <TextField fx:id="parentFirstName" layoutX="143.0" layoutY="164.0" prefHeight="26.0" prefWidth="90.0" promptText="parent first name" />
+      <TextField fx:id="parentLastName" layoutX="387.0" layoutY="164.0" prefHeight="26.0" prefWidth="90.0" promptText="parent last name" />
+      <TextField fx:id="phone" layoutX="143.0" layoutY="210.0" prefHeight="26.0" prefWidth="90.0" promptText="phone" />
+      <TextField fx:id="email" layoutX="383.0" layoutY="210.0" prefHeight="26.0" prefWidth="90.0" promptText="email" />
       <Label layoutX="47.0" layoutY="121.0" prefHeight="26.0" prefWidth="73.0" text="First name">
          <font>
             <Font name="System Bold" size="14.0" />
@@ -51,5 +54,10 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
+      <Label id="welcometext" fx:id="welcomeText" layoutX="30.0" layoutY="14.0" />
+      <Label layoutX="62.0" layoutY="255.0" text="username" />
+      <TextField fx:id="username" layoutX="146.0" layoutY="250.0" prefHeight="31.0" prefWidth="90.0" promptText="username" />
+      <Label layoutX="308.0" layoutY="255.0" text="password" />
+      <PasswordField fx:id="password" layoutX="384.0" layoutY="250.0" prefHeight="31.0" prefWidth="90.0" promptText="password" />
    </children>
 </AnchorPane>

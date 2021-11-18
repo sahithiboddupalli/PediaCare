@@ -13,7 +13,17 @@ public class UserMedicalHistory {
     }
 
     String currentCondition;
+
+    public String getPharmacy() {
+        return pharmacy;
+    }
+
+    public void setPharmacy(String pharmacy) {
+        this.pharmacy = pharmacy;
+    }
+
     String id;
+    String pharmacy;
 
     public String getUsername() {
         return username;

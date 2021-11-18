@@ -4,6 +4,16 @@ public class User {
     String username;
     String password;
     String firstName;
+
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
     String parentFirstName;
     String middleName;
     String lastName;
@@ -12,6 +22,7 @@ public class User {
     String parentLastName;
     String phone;
     String mail;
+    String date;
 
     public String getId() {
         return id;
