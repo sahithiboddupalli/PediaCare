@@ -18,7 +18,7 @@ public class LoginController {
 
     @FXML
     private TextField loginPassword;
-
+//Added login for patient
     @FXML
     public void onLoginClick(ActionEvent event) throws Exception{
         Stage stage = new Stage();
